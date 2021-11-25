@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div className="bg-primary font-body">
       <Head>
-        <title>Rawand's Portfolio</title>
+        <title>RawandDev</title>
       </Head>
       <Navbar />
       <Component {...pageProps} />

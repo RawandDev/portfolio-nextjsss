@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../public/logo.svg";
+import Logo from "../public/images/logo.svg";
 
 function Navbar() {
   return (
@@ -10,7 +10,7 @@ function Navbar() {
         <Image src={Logo} />
       </div>
       <div>
-        <ul className="md:flex md:justify-between w-96 text-xl">
+        <ul className="md:flex md:justify-between md:w-96 text-xl hidden">
           <Link href="/">
             <a>Home</a>
           </Link>
