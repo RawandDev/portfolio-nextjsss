@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         primary: "#27187E",
       },
+      fontFamily: {
+        body: ["Spartan", "sans-serif"],
+      },
     },
   },
   variants: {
