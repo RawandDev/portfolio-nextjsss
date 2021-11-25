@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         body: ["Spartan", "sans-serif"],
       },
+      fontSize: {
+        "10xl": "10rem",
+      },
     },
   },
   variants: {

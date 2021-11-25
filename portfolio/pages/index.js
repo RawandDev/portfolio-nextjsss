@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <Image src={avatar} className="rounded-full" />
       </div>
-      <div className="flex justify-center opacity-30">
+      <div className="flex justify-center opacity-30 mb-20">
         <Image src={particle} />
       </div>
     </>
