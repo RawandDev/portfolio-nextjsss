@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Work from "../components/Work";
 import avatar from "../public/images/avatar.svg";
 import particle from "../public/images/particle.svg";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="flex justify-center opacity-30 mb-20">
         <Image src={particle} />
       </div>
+      <Work />
     </>
   );
 }
