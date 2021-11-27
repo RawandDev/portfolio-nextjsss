@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#27187E",
+        darkPrimary: "#241675",
+        secondary: "#FF8600",
       },
       fontFamily: {
         body: ["Spartan", "sans-serif"],

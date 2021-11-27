@@ -6,7 +6,7 @@ import particle from "../public/images/particle.svg";
 export default function Home() {
   return (
     <>
-      <div className="text-center sm:flex sm:justify-around mt-20">
+      <div className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row mt-20">
         <div className="text-white text-3xl sm:max-w-2xl sm:flex sm:items-center mb-4">
           <div>
             <p>Hello there.</p>
