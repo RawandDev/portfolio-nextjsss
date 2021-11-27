@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/images/logo.svg";
 
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= 80) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="text-white md:flex md:justify-around md:items-center">
+    <div
+      className={`text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 ${
+        isScrolled ? "bg-darkPrimary" : ""
+      }`}
+    >
       <div>
         <Image src={Logo} />
       </div>
