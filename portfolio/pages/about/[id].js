@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import data from "../../components/data.json";
+import data from "../../utils/data.json";
 import Image from "next/image";
 
 function Details() {
@@ -12,15 +12,11 @@ function Details() {
 
   const displayData = data.find((item) => item.id === id);
 
-  console.log(displayData);
-
   const src1 = { src: displayData?.imageURL1 };
   const src2 = { src: displayData?.imageURL2 };
 
-  // console.log(src1.src);
-
   return (
-    <div className="text-white flex flex-col justify-center items-center mt-10">
+    <div className="text-white flex flex-col justify-center items-center mt-10 lg:text-center">
       <h1 className="font-bold text-2xl">{displayData?.title}</h1>
       <span className="text-sm mb-4">{displayData?.date}</span>
       <p className="max-w-4xl font-medium text-lg">{displayData?.content}</p>
