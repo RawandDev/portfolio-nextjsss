@@ -93,16 +93,16 @@ function contact() {
         />
       )}
       {confetti && (
-        <div class="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 animate-pulse absolute top-10 right-0 left-0">
-          <div class="flex items-center justify-center w-12 bg-green-500">
+        <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 animate-pulse absolute top-10 right-0 left-0">
+          <div className="flex items-center justify-center w-12 bg-green-500">
             <Image src={check} width={30} height={30} />
           </div>
-          <div class="px-4 py-2 -mx-3">
-            <div class="mx-3">
-              <span class="font-semibold text-green-500 dark:text-green-400">
+          <div className="px-4 py-2 -mx-3">
+            <div className="mx-3">
+              <span className="font-semibold text-green-500 dark:text-green-400">
                 Success
               </span>
-              <p class="text-sm text-gray-600 dark:text-gray-200">
+              <p className="text-sm text-gray-600 dark:text-gray-200">
                 Email has been sent successfully.
               </p>
             </div>
