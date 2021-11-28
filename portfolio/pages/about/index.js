@@ -37,12 +37,12 @@ function About() {
         {/* <div>
         <h2>Techincal Skills</h2>
         <ul className="text-lg">
-          <li>HTML</li>
-          <li>CSS</li>
           <li>JavaScript</li>
           <li>Reactjs</li>
           <li>Nextjs</li>
+          <li>Redux Toolkit</li>
           <li>Tailwindcss</li>
+          <li>Framer Motion</li>
           <li>Git</li>
           <li>GitHub</li>
           <li>Firebase</li>

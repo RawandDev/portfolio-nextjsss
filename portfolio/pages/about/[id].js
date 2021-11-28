@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import data from "../../utils/data.json";
 import Image from "next/image";
@@ -14,6 +14,12 @@ function Details() {
 
   const src1 = { src: displayData?.imageURL1 };
   const src2 = { src: displayData?.imageURL2 };
+
+  useEffect(() => {
+    if (!id) {
+      return router.push("/404");
+    }
+  });
 
   return (
     <div className="text-white flex flex-col justify-center items-center mt-10 lg:text-center">
