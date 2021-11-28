@@ -34,7 +34,9 @@ function contact() {
           "user_te48KNEUFxd287EXfyu9G"
         )
         .then((result) => {
-          setConfetti(false);
+          setTimeout(() => {
+            setConfetti(false);
+          }, 3000);
         });
     },
   });
@@ -102,8 +104,8 @@ function contact() {
       </form>
       {confetti && (
         <Confetti
-          width={window.innerWidth}
-          height={window.innerHeight}
+          width={window.innerWidth - 200}
+          height={window.innerHeight - 200}
           numberOfPieces={100}
           recycle={false}
         />
