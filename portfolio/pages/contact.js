@@ -58,6 +58,7 @@ function contact() {
         <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2 max-w-2xl sm:w-screen sm:place-items-center sm:justify-center sm:items-center">
           <input
             name="subject"
+            id="subject"
             type="text"
             placeholder="Subject"
             className={`bg-transparent border-b-2 ${
@@ -66,9 +67,7 @@ function contact() {
                 : "border-white"
             } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
             autoComplete="off"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.subject}
+            {...formik.getFieldProps("subject")}
           />
           <input
             name="email"
@@ -80,9 +79,7 @@ function contact() {
                 : "border-white"
             } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
             autoComplete="off"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
+            {...formik.getFieldProps("email")}
           />
           <textarea
             name="message"
@@ -93,15 +90,12 @@ function contact() {
                 : "border-white"
             } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300 col-span-2 sm:w-96 mt-3 h-20`}
             autoComplete="off"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.message}
+            {...formik.getFieldProps("message")}
           />
         </div>
         <button
           className="bg-white text-black font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gray-100 hover:text-black focus:outline-none focus:shadow-outline transition-all duration-300 mt-5"
           type="submit"
-          // onClick={handleConfetti}
         >
           Send
         </button>
