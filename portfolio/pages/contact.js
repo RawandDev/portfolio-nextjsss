@@ -3,39 +3,41 @@ import Image from "next/image";
 import Confetti from "react-confetti";
 import emailjs from "emailjs-com";
 import check from "../public/images/check.svg";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 function contact() {
   const [confetti, setConfetti] = useState(false);
 
-  function handleConfetti() {
-    setTimeout(() => {
-      setConfetti(false);
-    }, 5000);
-  }
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_t01c9ki",
-        "template_i5cqkdb",
-        form.current,
-        "user_te48KNEUFxd287EXfyu9G"
-      )
-      .then(
-        (result) => {
-          setConfetti(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
-  }
-
-  const form = useRef();
+  const formik = useFormik({
+    initialValues: {
+      subject: "",
+      email: "",
+      message: "",
+    },
+    validationSchema: Yup.object({
+      subject: Yup.string()
+        .max(100, "Must be 15 characters or less")
+        .required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+      message: Yup.string()
+        .max(500, "Must be 20 characters or less")
+        .required("Required"),
+    }),
+    onSubmit: (values) => {
+      setConfetti(true);
+      emailjs
+        .send(
+          "service_t01c9ki",
+          "template_i5cqkdb",
+          values,
+          "user_te48KNEUFxd287EXfyu9G"
+        )
+        .then((result) => {
+          setConfetti(false);
+        });
+    },
+  });
 
   return (
     <div>
@@ -50,8 +52,7 @@ function contact() {
         </p>
       </div>
       <form
-        onSubmit={sendEmail}
-        ref={form}
+        onSubmit={formik.handleSubmit}
         className="flex justify-center items-center flex-col"
       >
         <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2 max-w-2xl sm:w-screen sm:place-items-center sm:justify-center sm:items-center">
@@ -59,27 +60,48 @@ function contact() {
             name="subject"
             type="text"
             placeholder="Subject"
-            className="bg-transparent border-b-2 border-white border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300"
+            className={`bg-transparent border-b-2 ${
+              formik.errors.subject && formik.touched.subject
+                ? "border-red-500"
+                : "border-white"
+            } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
             autoComplete="off"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.subject}
           />
           <input
             name="email"
             type="email"
             placeholder="Email"
-            className="bg-transparent border-b-2 border-white border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300"
+            className={`bg-transparent border-b-2 ${
+              formik.errors.email && formik.touched.email
+                ? "border-red-500"
+                : "border-white"
+            } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
             autoComplete="off"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
           />
           <textarea
             name="message"
             placeholder="Your Message"
-            className="bg-transparent border-b-2 border-white border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300 col-span-2 sm:w-96 mt-3 h-20"
+            className={`bg-transparent border-b-2 ${
+              formik.errors.message && formik.touched.message
+                ? "border-red-500"
+                : "border-white"
+            } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300 col-span-2 sm:w-96 mt-3 h-20`}
             autoComplete="off"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.message}
           />
         </div>
         <button
           className="bg-white text-black font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gray-100 hover:text-black focus:outline-none focus:shadow-outline transition-all duration-300 mt-5"
           type="submit"
-          onClick={handleConfetti}
+          // onClick={handleConfetti}
         >
           Send
         </button>
