@@ -1,10 +1,22 @@
 [
   {
+    "no": ".01",
     "title": "Libvery",
     "description": "An easy to use web application for those who wants to buy/sell books.",
     "imageURL": "https://raw.githubusercontent.com/gist/RawandDev/4325f6efc7c34034e16efe298638f40b/raw/764ca5be8cb47da1c84771aacb8e82bfd0651718/libvery.svg",
     "tech": "Reactjs, Redux Toolkit, Firebase, Tailwindcss and Figma.",
     "demo": "https://libvery.netlify.app/",
-    "github": "https://github.com/Iraq-RBC-Capstones-2021/capstone-react-libvery"
+    "github": "https://github.com/Iraq-RBC-Capstones-2021/capstone-react-libvery",
+    "isReversed": false
+  },
+  {
+    "no": ".02",
+    "title": "Portfolio",
+    "description": "A simple portfolio to showcase my works and experiences.",
+    "imageURL": "https://raw.githubusercontent.com/gist/RawandDev/a03837cfcc7f6c51b4adf3fe4d9cad82/raw/f3c15d5e8fca7ecc8feb65a6f3317e5c973a45f2/portfolio.svg",
+    "tech": "Nextjs, Tailwindcss and Figma.",
+    "demo": "https://rawadev.me",
+    "github": "https://github.com/RawandDev/portfolio-nextjsss",
+    "isReversed": true
   }
 ]
