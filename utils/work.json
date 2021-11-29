@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Libvery",
+    "description": "An easy to use web application for those who wants to buy/sell books.",
+    "imageURL": "https://raw.githubusercontent.com/gist/RawandDev/4325f6efc7c34034e16efe298638f40b/raw/764ca5be8cb47da1c84771aacb8e82bfd0651718/libvery.svg",
+    "tech": "Reactjs, Redux Toolkit, Firebase, Tailwindcss and Figma.",
+    "demo": "https://libvery.netlify.app/",
+    "github": "https://github.com/Iraq-RBC-Capstones-2021/capstone-react-libvery"
+  }
+]
