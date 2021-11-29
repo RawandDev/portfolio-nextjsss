@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
                 `}
       </Script>
       <Head>
-        <title>RawandDev</title>
+        <title>RawaDev</title>
       </Head>
       <Navbar />
       <Component {...pageProps} />
