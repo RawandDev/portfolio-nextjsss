@@ -12,12 +12,19 @@ function NavbarButtons({ isOpened, setIsOpened }) {
         type="button"
       >
         {isOpened ? (
-          <Image src={menu} width={40} height={40} className="cursor-pointer" />
+          <Image
+            src={menu}
+            width={40}
+            height={40}
+            alt="menu-open"
+            className="cursor-pointer"
+          />
         ) : (
           <Image
             src={close}
             width={40}
             height={40}
+            alt="menu-close"
             className="cursor-pointer"
           />
         )}

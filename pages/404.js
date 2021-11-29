@@ -14,7 +14,7 @@ function Custom404() {
         </Link>
       </button>
       <div className="max-w-lg sm:max-w-2xl">
-        <Image src={error} />
+        <Image src={error} alt="error" />
       </div>
     </div>
   );

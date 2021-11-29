@@ -113,7 +113,7 @@ function contact() {
       {confetti && (
         <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 animate-pulse absolute top-10 right-0 left-0">
           <div className="flex items-center justify-center w-12 bg-green-500">
-            <Image src={check} width={30} height={30} />
+            <Image src={check} width={30} height={30} alt="check" />
           </div>
           <div className="px-4 py-2 -mx-3">
             <div className="mx-3">

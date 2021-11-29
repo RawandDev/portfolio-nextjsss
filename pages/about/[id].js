@@ -33,14 +33,14 @@ function Details() {
             width={600}
             height={400}
             objectFit="contain"
-            alt="image"
+            alt={displayData?.title}
           />
           <Image
             {...src2}
             width={600}
             height={400}
             objectFit="contain"
-            alt="image"
+            alt={displayData?.title}
           />
         </div>
       )}

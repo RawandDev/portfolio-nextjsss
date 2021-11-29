@@ -27,7 +27,6 @@ function DisplayWork() {
                   src={work.imageURL}
                   height={440}
                   width={600}
-                  priority={true}
                   alt={work.title}
                   className="rounded-md object-contain"
                 />

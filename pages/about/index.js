@@ -31,6 +31,7 @@ function About() {
             src={rocket}
             width={300}
             height={300}
+            alt="rocket"
             className="opacity-10 animate-pulse"
           />
         </div>

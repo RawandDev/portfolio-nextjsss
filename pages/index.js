@@ -16,10 +16,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <Image src={avatar} className="rounded-full" />
+        <Image src={avatar} alt="avatar" className="rounded-full" />
       </div>
       <div className="flex justify-center opacity-30 mb-20">
-        <Image src={particle} />
+        <Image src={particle} alt="particle" />
       </div>
       <Work />
     </>
