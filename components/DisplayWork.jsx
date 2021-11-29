@@ -20,25 +20,25 @@ function DisplayWork() {
                 className="rounded-md"
               />
             </a>
-            <div className="text-white text-center">
+            <div className="text-white text-center lg:ml-10">
               <h1 className="text-2xl font-semibold">{work.title}</h1>
               <p>{work.description}</p>
               <p>
                 <span className="font-bold">Techs:</span> {work.tech}
               </p>
-              <div className="text-center">
+              <div className="text-center mt-4">
                 <a
                   href={work.demo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-4"
                 >
-                  <button className="bg-white text-black hover:bg-gray-200 hover:text-black font-bold py-1 px-3 rounded-md">
+                  <button className="bg-white text-black hover:bg-gray-200 hover:text-black font-medium py-1 px-3 rounded-md">
                     Demo
                   </button>
                 </a>
                 <a href={work.github} target="_blank" rel="noopener noreferrer">
-                  <button className="bg-white text-black hover:bg-gray-200 hover:text-black font-bold py-1 px-3 rounded-md">
+                  <button className="bg-white text-black hover:bg-gray-200 hover:text-black font-medium py-1 px-3 rounded-md">
                     Github
                   </button>
                 </a>
