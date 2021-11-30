@@ -1,0 +1,16 @@
+export const github = require("../public/images/github.svg");
+export const twitter = require("../public/images/twitter.svg");
+export const instagram = require("../public/images/instagram.svg");
+export const team = require("../public/images/team.svg");
+export const freelancer = require("../public/images/freelancer.svg");
+export const brush = require("../public/images/brush.svg");
+export const company = require("../public/images/company.svg");
+export const logo = require("../public/images/logo.svg");
+export const menu = require("../public/images/menu.svg");
+export const close = require("../public/images/close.svg");
+export const check = require("../public/images/check.svg");
+export const avatar = require("../public/images/avatar.svg");
+export const error = require("../public/images/error.svg");
+export const particle = require("../public/images/particle.svg");
+export const recoded1 = require("../public/images/recoded1.jpg");
+export const recoded2 = require("../public/images/recoded2.jpg");

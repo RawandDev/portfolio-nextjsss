@@ -1,15 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import team from "../../public/images/team.svg";
-import freelancer from "../../public/images/freelancer.svg";
-import brush from "../../public/images/brush.svg";
-import company from "../../public/images/company.svg";
 import GeneralSkills from "../../components/GeneralSkills";
 import data from "../../utils/data.json";
-import github from "../../public/images/github.svg";
-import twitter from "../../public/images/twitter.svg";
-import instagram from "../../public/images/instagram.svg";
+import {
+  team,
+  freelancer,
+  brush,
+  company,
+  github,
+  twitter,
+  instagram,
+} from "../../utils/exportImages";
 
 function About() {
   return (
@@ -79,21 +81,21 @@ function About() {
           </ul>
         </div>
         {/* <div>
-        <h2>Techincal Skills</h2>
-        <ul className="text-lg">
-          <li>JavaScript</li>
-          <li>Reactjs</li>
-          <li>Nextjs</li>
-          <li>Redux Toolkit</li>
-          <li>Tailwindcss</li>
-          <li>Framer Motion</li>
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>Firebase</li>
-          <li>Figma</li>
-          <li>Adobe XD</li>
-        </ul>
-      </div> */}
+          <h2>Techincal Skills</h2>
+          <ul className="text-lg">
+            <li>JavaScript</li>
+            <li>Reactjs</li>
+            <li>Nextjs</li>
+            <li>Redux Toolkit</li>
+            <li>Tailwindcss</li>
+            <li>Framer Motion</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Firebase</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+          </ul>
+        </div> */}
       </div>
       <div>
         <h2 className="text-center text-white font-extrabold text-2xl mt-10">

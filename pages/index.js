@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Work from "../components/Work";
-import avatar from "../public/images/avatar.svg";
-import particle from "../public/images/particle.svg";
+import { avatar, particle } from "../utils/exportImages";
 
 export default function Home() {
   return (

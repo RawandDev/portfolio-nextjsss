@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Confetti from "react-confetti";
 import emailjs from "emailjs-com";
-import check from "../public/images/check.svg";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { check } from "../utils/exportImages";
 
 function contact() {
   const [confetti, setConfetti] = useState(false);
