@@ -11,6 +11,14 @@ import {
   github,
   twitter,
   instagram,
+  figma,
+  reactjs,
+  redux,
+  nextjs,
+  javascript,
+  firebase,
+  framer,
+  tailwindcss,
 } from "../../utils/exportImages";
 
 function About() {
@@ -80,22 +88,21 @@ function About() {
             </li>
           </ul>
         </div>
-        {/* <div>
-          <h2>Techincal Skills</h2>
-          <ul className="text-lg">
-            <li>JavaScript</li>
-            <li>Reactjs</li>
-            <li>Nextjs</li>
-            <li>Redux Toolkit</li>
-            <li>Tailwindcss</li>
-            <li>Framer Motion</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Firebase</li>
-            <li>Figma</li>
-            <li>Adobe XD</li>
+        <div>
+          <h2 className="text-center text-white font-extrabold text-2xl mt-10 mb-2">
+            Technical Skills
+          </h2>
+          <ul className="text-lg grid grid-cols-4 gap-y-4 md:mx-32">
+            <Image src={javascript} alt="javascript" width={35} height={35} />
+            <Image src={reactjs} alt="reactjs" width={35} height={35} />
+            <Image src={nextjs} alt="nextjs" width={35} height={35} />
+            <Image src={redux} alt="redux" width={35} height={35} />
+            <Image src={github} alt="github" width={35} height={35} />
+            <Image src={firebase} alt="firebase" width={35} height={35} />
+            <Image src={tailwindcss} alt="tailwindcss" width={35} height={35} />
+            <Image src={figma} alt="figma" width={35} height={35} />
           </ul>
-        </div> */}
+        </div>
       </div>
       <div>
         <h2 className="text-center text-white font-extrabold text-2xl mt-10">
