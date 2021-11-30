@@ -99,7 +99,7 @@ function About() {
         <h2 className="text-center text-white font-extrabold text-2xl mt-10">
           General Skills
         </h2>
-        <ul className="text-white sm:grid sm:grid-cols-2 sm:gap-3">
+        <ul className="text-white sm:grid sm:grid-cols-2 grid gap-y-5 sm:gap-3">
           <GeneralSkills
             style="rounded-md bg-gradient-to-r from-green-300 to-green-500"
             imageURL={team}
