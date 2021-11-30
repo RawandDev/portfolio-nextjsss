@@ -11,14 +11,6 @@ import {
   github,
   twitter,
   instagram,
-  figma,
-  reactjs,
-  redux,
-  nextjs,
-  javascript,
-  firebase,
-  framer,
-  tailwindcss,
 } from "../../utils/exportImages";
 import Techs from "../../components/Techs";
 
