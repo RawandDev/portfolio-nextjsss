@@ -20,6 +20,7 @@ import {
   framer,
   tailwindcss,
 } from "../../utils/exportImages";
+import Techs from "../../components/Techs";
 
 function About() {
   return (
@@ -89,19 +90,7 @@ function About() {
           </ul>
         </div>
         <div>
-          <h2 className="text-center text-white font-extrabold text-2xl mt-10 mb-2">
-            Technical Skills
-          </h2>
-          <ul className="text-lg grid grid-cols-4 gap-y-4 md:mx-32">
-            <Image src={javascript} alt="javascript" width={35} height={35} />
-            <Image src={reactjs} alt="reactjs" width={35} height={35} />
-            <Image src={nextjs} alt="nextjs" width={35} height={35} />
-            <Image src={redux} alt="redux" width={35} height={35} />
-            <Image src={github} alt="github" width={35} height={35} />
-            <Image src={firebase} alt="firebase" width={35} height={35} />
-            <Image src={tailwindcss} alt="tailwindcss" width={35} height={35} />
-            <Image src={figma} alt="figma" width={35} height={35} />
-          </ul>
+          <Techs />
         </div>
       </div>
       <div>
