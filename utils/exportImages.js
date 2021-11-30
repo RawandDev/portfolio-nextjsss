@@ -1,7 +1,6 @@
 export const github = require("../public/images/github.svg");
 export const twitter = require("../public/images/twitter.svg");
 export const instagram = require("../public/images/instagram.svg");
-export const linkedin = require("../public/images/linkedin.svg");
 export const team = require("../public/images/team.svg");
 export const freelancer = require("../public/images/freelancer.svg");
 export const brush = require("../public/images/brush.svg");

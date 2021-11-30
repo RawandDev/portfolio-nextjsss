@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Testimonila from "../components/Testimonila";
 import Work from "../components/Work";
 import { particle } from "../utils/exportImages";
 
@@ -28,7 +27,6 @@ export default function Home() {
       <div className="flex justify-center opacity-30 mb-20">
         <Image src={particle} alt="particle" />
       </div>
-      <Testimonila />
       <Work />
     </>
   );
