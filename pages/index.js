@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Testimonila from "../components/Testimonila";
 import Work from "../components/Work";
-import { avatar, particle } from "../utils/exportImages";
+import { particle } from "../utils/exportImages";
 
 export default function Home() {
   return (
@@ -16,7 +16,14 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <Image src={avatar} alt="avatar" className="rounded-full" />
+        <Image
+          src="https://i.imgur.com/LhEB9x9.jpeg"
+          alt="avatar"
+          className="rounded-full"
+          width={400}
+          height={400}
+          objectFit="cover"
+        />
       </div>
       <div className="flex justify-center opacity-30 mb-20">
         <Image src={particle} alt="particle" />
