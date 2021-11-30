@@ -5,9 +5,11 @@ import team from "../../public/images/team.svg";
 import freelancer from "../../public/images/freelancer.svg";
 import brush from "../../public/images/brush.svg";
 import company from "../../public/images/company.svg";
-import rocket from "../../public/images/rocket.png";
 import GeneralSkills from "../../components/GeneralSkills";
 import data from "../../utils/data.json";
+import github from "../../public/images/github.svg";
+import twitter from "../../public/images/twitter.svg";
+import instagram from "../../public/images/instagram.svg";
 
 function About() {
   return (
@@ -26,14 +28,55 @@ function About() {
             things and improve my skills.
           </p>
         </div>
-        <div className="absolute right-0 top-0 md:top-32">
-          <Image
-            src={rocket}
-            width={300}
-            height={300}
-            alt="rocket"
-            className="opacity-10 animate-pulse"
-          />
+        <div className="absolute right-6 top-32 sm:right-20 sm:top-52">
+          <ul>
+            <li>
+              <a
+                href="https://www.github.com/RawandDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={github}
+                  alt="github"
+                  width={30}
+                  height={30}
+                  className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/ErFyDev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
+              >
+                <Image
+                  src={twitter}
+                  alt="twitter"
+                  width={30}
+                  height={30}
+                  className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/rawand._.kamal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={instagram}
+                  alt="instagram"
+                  width={30}
+                  height={30}
+                  className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
         {/* <div>
         <h2>Techincal Skills</h2>
