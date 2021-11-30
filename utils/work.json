@@ -22,7 +22,7 @@
   {
     "no": ".03",
     "title": "Weather App",
-    "description": "A simple weather app to built while learning reactjs.",
+    "description": "A simple weather app built while learning reactjs.",
     "imageURL": "https://raw.githubusercontent.com/gist/RawandDev/c3b9a3d1d9502856f02fc1acd3e76732/raw/0c39d1f1b1da00bd27e593c5eb3867b87ee58003/weather.svg",
     "tech": "Reactjs, Talwindcss, API and Framer motion.",
     "demo": "https://weather-app-info-reactjs.netlify.app",
