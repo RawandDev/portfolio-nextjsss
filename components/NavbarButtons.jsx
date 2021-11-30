@@ -13,7 +13,7 @@ function NavbarButtons({ isOpened, setIsOpened }) {
       >
         {isOpened ? (
           <Image
-            src={menu}
+            src={close}
             width={40}
             height={40}
             alt="menu-open"
@@ -21,7 +21,7 @@ function NavbarButtons({ isOpened, setIsOpened }) {
           />
         ) : (
           <Image
-            src={close}
+            src={menu}
             width={40}
             height={40}
             alt="menu-close"

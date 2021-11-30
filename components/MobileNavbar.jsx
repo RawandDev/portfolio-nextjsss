@@ -4,7 +4,7 @@ import Link from "next/link";
 function MobileNavbar({ isOpened }) {
   return (
     <>
-      {!isOpened && (
+      {isOpened && (
         <ul className="md:hidden flex flex-col text-white text-xl">
           <Link href="/">
             <a>Home</a>
