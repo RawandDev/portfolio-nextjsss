@@ -15,10 +15,8 @@ export default function Home() {
             </p>
           </div>
           <Link href="/work">
-            <a>
-              <button className="bg-white border-2 text-black hover:bg-black hover:text-white font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl">
-                Projects
-              </button>
+            <a className="bg-white border-2 text-black hover:bg-black hover:text-white font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl">
+              Projects
             </a>
           </Link>
         </div>
