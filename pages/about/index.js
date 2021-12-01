@@ -60,7 +60,7 @@ function About() {
           />
         </ul>
       </div>
-      <div>
+      <div className="overflow-hidden">
         <h2 className="text-center text-white font-extrabold text-2xl mt-10">
           Achievements
         </h2>
@@ -68,14 +68,14 @@ function About() {
           {data?.map((item, index) => {
             return (
               <Link href={`/about/${item?.id}`} key={item?.id}>
-                <a className="max-w-md relative pb-10 mb-10 cursor-pointer shadow-xl rounded-lg hover:bg-darkPrimary transition-all duration-300">
+                <a className="max-w-md relative pb-10 mb-10 cursor-pointer shadow-xl rounded-lg hover:bg-indigo-800 transition-all duration- overflow-visible">
                   <svg
                     width="42"
                     height="400"
                     viewBox="0 0 43 629"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute -left-10"
+                    className="absolute -left-10 overflow-visible"
                   >
                     <rect x="20" y="43" width="4" height="1034" fill="white" />
                     <circle
