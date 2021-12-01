@@ -1,46 +1,45 @@
-import React, { useEffect } from "react";
-import { useRouter } from "next/router";
+import React from "react";
 import data from "../../utils/data.json";
 import Image from "next/image";
 
-function Details() {
-  const router = useRouter();
+export async function getStaticProps({ params }) {
+  const { id } = params;
+  const about = data.find((item) => item.id === id);
+  return {
+    props: {
+      about,
+    },
+  };
+}
 
-  const { id } = router.query;
+export async function getStaticPaths() {
+  return {
+    paths: data.map((item) => ({ params: { id: item.id } })),
+    fallback: false,
+  };
+}
 
-  console.log(router);
-
-  const displayData = data.find((item) => item.id === id);
-
-  const src1 = { src: displayData?.imageURL1 };
-  const src2 = { src: displayData?.imageURL2 };
-
-  useEffect(() => {
-    if (!id) {
-      return router.push("/404");
-    }
-  });
-
+function Details({ about }) {
   return (
     <div className="text-white flex flex-col justify-center items-center mt-10 lg:text-center">
-      <h1 className="font-bold text-2xl">{displayData?.title}</h1>
-      <span className="text-sm mb-4">{displayData?.date}</span>
-      <p className="max-w-4xl font-medium text-lg">{displayData?.content}</p>
-      {displayData?.imageURL1 && displayData?.imageURL2 && (
+      <h1 className="font-bold text-2xl">{about?.title}</h1>
+      <span className="text-sm mb-4">{about?.date}</span>
+      <p className="max-w-4xl font-medium text-lg">{about?.content}</p>
+      {about?.imageURL1 && about?.imageURL2 && (
         <div>
           <Image
-            {...src1}
+            src={about?.imageURL1}
             width={600}
             height={400}
             objectFit="contain"
-            alt={displayData?.title}
+            alt={about?.title}
           />
           <Image
-            {...src2}
+            src={about?.imageURL2}
             width={600}
             height={400}
             objectFit="contain"
-            alt={displayData?.title}
+            alt={about?.title}
           />
         </div>
       )}

@@ -1,12 +1,19 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import GeneralSkills from "../../components/GeneralSkills";
 import data from "../../utils/data.json";
 import { team, freelancer, brush, company } from "../../utils/exportImages";
 import Techs from "../../components/Techs";
 
-function About() {
+export const getStaticProps = async () => {
+  return {
+    props: {
+      myData: data,
+    },
+  };
+};
+
+function About({ myData }) {
   return (
     <div>
       <div className="text-white mt-32">
@@ -65,7 +72,7 @@ function About() {
           Achievements
         </h2>
         <ul className="relative text-white ml-10 text-lg flex flex-col justify-center items-center">
-          {data?.map((item, index) => {
+          {myData?.map((item, index) => {
             return (
               <Link href={`/about/${item?.id}`} key={item?.id}>
                 <a className="max-w-md relative pb-10 mb-10 cursor-pointer shadow-xl rounded-lg hover:bg-indigo-800 transition-all duration- overflow-visible">
