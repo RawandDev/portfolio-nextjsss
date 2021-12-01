@@ -96,7 +96,7 @@ function contact() {
           />
         </div>
         <button
-          className="bg-white text-black font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gray-100 hover:text-black focus:outline-none focus:shadow-outline transition-all duration-300 mt-5"
+          className="bg-white text-black font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gray-100 hover:text-black focus:outline-none focus:shadow-outline transition-all duration-300 my-5"
           type="submit"
         >
           Send

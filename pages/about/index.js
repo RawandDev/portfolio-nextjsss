@@ -3,15 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GeneralSkills from "../../components/GeneralSkills";
 import data from "../../utils/data.json";
-import {
-  team,
-  freelancer,
-  brush,
-  company,
-  github,
-  twitter,
-  instagram,
-} from "../../utils/exportImages";
+import { team, freelancer, brush, company } from "../../utils/exportImages";
 import Techs from "../../components/Techs";
 
 function About() {
@@ -30,56 +22,6 @@ function About() {
             I'm always looking for new challenges and opportunities to learn new
             things and improve my skills.
           </p>
-        </div>
-        <div className="absolute right-6 top-32 sm:right-20 sm:top-52">
-          <ul>
-            <li>
-              <a
-                href="https://www.github.com/RawandDev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={github}
-                  alt="github"
-                  width={30}
-                  height={30}
-                  className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/ErFyDev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
-              >
-                <Image
-                  src={twitter}
-                  alt="twitter"
-                  width={30}
-                  height={30}
-                  className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/rawand._.kamal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={instagram}
-                  alt="instagram"
-                  width={30}
-                  height={30}
-                  className="transform translate-x-1/2 hover:translate-x-0 translate-transition duration-300"
-                />
-              </a>
-            </li>
-          </ul>
         </div>
         <div>
           <Techs />
