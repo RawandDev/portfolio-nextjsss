@@ -11,9 +11,11 @@ function Navbar() {
   return (
     <div>
       <div className="text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between relative">
-        <div>
-          <Image src={Logo} alt="logo" />
-        </div>
+        <Link href="/">
+          <a>
+            <Image src={Logo} alt="logo" />
+          </a>
+        </Link>
         <div>
           <ul className="md:flex md:justify-between md:w-96 text-xl hidden">
             <Link href="/">
