@@ -1,6 +1,6 @@
 [
   {
-    "no": ".01",
+    "no": "01",
     "title": "Libvery",
     "description": "An easy to use web application for those who wants to buy/sell books.",
     "imageURL": "https://raw.githubusercontent.com/gist/RawandDev/4325f6efc7c34034e16efe298638f40b/raw/764ca5be8cb47da1c84771aacb8e82bfd0651718/libvery.svg",
@@ -10,7 +10,7 @@
     "isReversed": false
   },
   {
-    "no": ".02",
+    "no": "02",
     "title": "Portfolio",
     "description": "A simple portfolio to showcase my works and experiences.",
     "imageURL": "https://raw.githubusercontent.com/gist/RawandDev/a03837cfcc7f6c51b4adf3fe4d9cad82/raw/f3c15d5e8fca7ecc8feb65a6f3317e5c973a45f2/portfolio.svg",
@@ -20,7 +20,7 @@
     "isReversed": true
   },
   {
-    "no": ".03",
+    "no": "03",
     "title": "Weather App",
     "description": "A simple weather app built while learning reactjs.",
     "imageURL": "https://raw.githubusercontent.com/gist/RawandDev/c3b9a3d1d9502856f02fc1acd3e76732/raw/0c39d1f1b1da00bd27e593c5eb3867b87ee58003/weather.svg",

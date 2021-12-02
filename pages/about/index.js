@@ -17,8 +17,8 @@ function About({ myData }) {
   return (
     <div>
       <div className="text-white mt-32">
-        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-10">
-          .About
+        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
+          <span className="text-secondary">.</span>About
         </h1>
         <div className="text-xl font-semibold md:max-w-xl">
           <p>

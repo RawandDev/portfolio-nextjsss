@@ -44,8 +44,8 @@ function contact() {
   return (
     <div>
       <div className="text-white mt-32">
-        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-10">
-          .Contact
+        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
+          <span className="text-secondary">.</span>Contact
         </h1>
       </div>
       <div className="text-white mb-4">

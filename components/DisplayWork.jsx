@@ -9,6 +9,7 @@ function DisplayWork() {
         return (
           <div key={work.title}>
             <p className="font-extrabold text-9xl opacity-30 text-white">
+              <span className="text-secondary">.</span>
               {work.no}
             </p>
             <div

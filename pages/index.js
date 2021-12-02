@@ -9,10 +9,12 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row mt-20">
         <div className="text-white text-3xl sm:max-w-2xl sm:flex sm:flex-col sm:items-left mb-4">
           <div>
-            <p>Hello there.</p>
+            <p>
+              Hello there<span className="text-secondary">.</span>
+            </p>
             <p>
               I’m Rawand, a passionate web developer who enjoys trying new
-              things and challenges.
+              things and challenges<span className="text-secondary">.</span>
             </p>
           </div>
           <Link href="/work">
