@@ -55,12 +55,14 @@ function Footer() {
           </li>
         </ul>
         <div>
-          <p className="text-center text-xs mb-4 sm:mb-0">© 2021 Rawand Kamal</p>
+          <p className="text-center text-xs mb-4 sm:mb-0">
+            © 2021 Rawand Kamal
+          </p>
         </div>
         <div>
           <p className="text-center text-xs hover:text-gray-300">
-            <a href="mailto:rawand.kamal11111@gmail.com">
-              rawand.kamal11111@gmail.com
+            <a href="mailto:rawand.200091384037@gmail.com">
+              rawand.200091384037@gmail.com
             </a>
           </p>
         </div>
