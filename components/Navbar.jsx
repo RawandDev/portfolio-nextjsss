@@ -11,20 +11,14 @@ function Navbar() {
   const [lastYPos, setLastYPos] = useState(0);
   const [showActions, setShowActions] = useState(true);
 
-  // console.log(window.scrollY);
-  // console.log(lastYPos);
-
   useEffect(() => {
     const handleScroll = () => {
       const yPos = window.scrollY;
-      console.log("yPos", yPos);
-      console.log("lastYPos", lastYPos);
       if (lastYPos > yPos) {
         setShowActions(true);
       } else {
         setShowActions(false);
       }
-      // setShowActions(lastYPos > yPos);
       setLastYPos(yPos);
     };
 
