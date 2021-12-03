@@ -4,11 +4,11 @@ import Head from "next/head";
 import Script from "next/script";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import NextNProgress from "nextjs-progressbar";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div className="font-body mx-4 sm:mx-20">
-      {/* <Script> */}
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -27,10 +27,18 @@ function MyApp({ Component, pageProps }) {
             }
                 `}
       </Script>
-      {/* </Script> */}
       <Head>
         <title>RawaDev</title>
       </Head>
+      <NextNProgress
+        color="#FF8600"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={2}
+        showOnShallow={true}
+        spinner
+        options={{ showSpinner: false }}
+      />
       <Navbar />
       <Component {...pageProps} />
       <Footer />
