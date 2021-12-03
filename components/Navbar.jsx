@@ -1,16 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/images/logo.svg";
 import MobileNavbar from "./MobileNavbar";
 import NavbarButtons from "./NavbarButtons";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
+  const [lastYPos, setLastYPos] = useState(0);
+  const [showActions, setShowActions] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const yPos = window.scrollY;
+      setShowActions(lastYPos > yPos);
+      setLastYPos(yPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [showActions, lastYPos]);
 
   return (
     <div>
-      <div className="text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between relative">
+      <motion.div
+        animate={{ opacity: showActions ? 1 : 0 }}
+        className="text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between fixed w-full left-0 bg-primary px-20"
+      >
         <Link href="/">
           <a>
             <Image src={Logo} alt="logo" />
@@ -33,8 +52,13 @@ function Navbar() {
           </ul>
         </div>
         <NavbarButtons isOpened={isOpened} setIsOpened={setIsOpened} />
-      </div>
-      <MobileNavbar isOpened={isOpened} setIsOpened={setIsOpened} />
+      </motion.div>
+      <MobileNavbar
+        isOpened={isOpened}
+        setIsOpened={setIsOpened}
+        lastYPos={lastYPos}
+        showActions={showActions}
+      />
     </div>
   );
 }
