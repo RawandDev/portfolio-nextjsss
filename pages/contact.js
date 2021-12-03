@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { check } from "../utils/exportImages";
+import { motion } from "framer-motion";
 
 function contact() {
   const [confetti, setConfetti] = useState(false);
@@ -44,9 +45,13 @@ function contact() {
   return (
     <div>
       <div className="text-white mt-32">
-        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
+        <motion.h1
+          initial={{ x: -100 }}
+          animate={{ x: 0 }}
+          className="text-7xl sm:text-10xl font-extrabold opacity-30"
+        >
           <span className="text-secondary">.</span>Contact
-        </h1>
+        </motion.h1>
       </div>
       <div className="text-white mb-4">
         <p className="text-lg font-medium">

@@ -4,6 +4,7 @@ import GeneralSkills from "../../components/GeneralSkills";
 import data from "../../utils/data.json";
 import { team, freelancer, brush, company } from "../../utils/exportImages";
 import Techs from "../../components/Techs";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 export const getStaticProps = async () => {
   return {
@@ -14,12 +15,19 @@ export const getStaticProps = async () => {
 };
 
 function About({ myData }) {
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+
   return (
     <div>
       <div className="text-white mt-32">
-        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
+        <motion.h1
+          initial={{ x: -100 }}
+          animate={{ x: 0 }}
+          className="text-7xl sm:text-10xl font-extrabold opacity-30"
+        >
           <span className="text-secondary">.</span>About
-        </h1>
+        </motion.h1>
         <div className="text-xl font-semibold md:max-w-xl">
           <p>
             I’m a self-taught programmer and an undergraduate student currently
