@@ -9,12 +9,22 @@ import { motion } from "framer-motion";
 function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
   const [lastYPos, setLastYPos] = useState(0);
-  const [showActions, setShowActions] = useState(false);
+  const [showActions, setShowActions] = useState(true);
+
+  // console.log(window.scrollY);
+  // console.log(lastYPos);
 
   useEffect(() => {
     const handleScroll = () => {
       const yPos = window.scrollY;
-      setShowActions(lastYPos > yPos);
+      console.log("yPos", yPos);
+      console.log("lastYPos", lastYPos);
+      if (lastYPos > yPos) {
+        setShowActions(true);
+      } else {
+        setShowActions(false);
+      }
+      // setShowActions(lastYPos > yPos);
       setLastYPos(yPos);
     };
 
@@ -27,7 +37,7 @@ function Navbar() {
   return (
     <div>
       <motion.div
-        animate={{ opacity: showActions ? 1 : 0 }}
+        animate={{ opacity: showActions ? 1 : 0, y: showActions ? 0 : -100 }}
         className="text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between fixed w-full left-0 bg-primary px-20"
       >
         <Link href="/">
