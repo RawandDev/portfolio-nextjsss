@@ -14,7 +14,7 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const yPos = window.scrollY;
-      if (lastYPos > yPos) {
+      if (lastYPos + 0.8 > yPos) {
         setShowActions(true);
       } else {
         setShowActions(false);

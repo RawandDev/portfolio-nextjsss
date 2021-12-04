@@ -7,7 +7,9 @@ function MobileNavbar({ isOpened, showActions }) {
     <>
       {isOpened && (
         <motion.ul
-          animate={{ opacity: showActions ? 1 : 0 }}
+          animate={{
+            opacity: showActions ? 1 : 0,
+          }}
           className="md:hidden flex flex-col text-white text-2xl mt-32 fixed left-0 pl-20 z-10 -top-9 bg-primary w-full"
         >
           <Link href="/">
