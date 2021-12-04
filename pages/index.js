@@ -10,7 +10,7 @@ export default function Home() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row mt-32"
+        className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row mt-20"
       >
         <motion.div
           initial={{ opacity: 0, x: -100 }}
