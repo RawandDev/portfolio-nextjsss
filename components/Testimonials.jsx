@@ -61,7 +61,7 @@ function Testimonials() {
                 <div className="flex justify-center">
                   <div className="mr-4">
                     <a
-                      href={item.linkedin}
+                      href={item.github}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -70,7 +70,7 @@ function Testimonials() {
                   </div>
                   <div>
                     <a
-                      href={item.github}
+                      href={item.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
