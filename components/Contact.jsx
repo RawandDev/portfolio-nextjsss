@@ -42,7 +42,7 @@ function Contact() {
   });
 
   return (
-    <div className="relative">
+    <div className="relative" id="contact">
       <div className="text-white mt-32">
         <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>Contact

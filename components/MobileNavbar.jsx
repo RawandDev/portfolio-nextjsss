@@ -6,18 +6,18 @@ function MobileNavbar({ isOpened }) {
     <>
       {isOpened && (
         <ul className="md:hidden flex flex-col text-white text-xl">
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-          <Link href="/work">
-            <a>Work</a>
-          </Link>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>{" "}
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       )}
     </>

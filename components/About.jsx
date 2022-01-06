@@ -4,8 +4,8 @@ import Techs from "./Techs";
 
 function About() {
   return (
-    <div>
-      <div className="text-white mt-32">
+    <>
+      <div className="text-white mt-32" id="about">
         <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>About
         </h1>
@@ -60,7 +60,7 @@ function About() {
           })}
         </ul>
       </div>
-    </div>
+    </>
   );
 }
 
