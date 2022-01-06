@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { error } from "../utils/exportImages";
 
 function Custom404() {
   return (
@@ -16,7 +15,7 @@ function Custom404() {
         </Link>
       </button>
       <div className="max-w-lg sm:max-w-2xl">
-        <Image src={error} alt="error" />
+        <Image src="/images/error.svg" alt="error" />
       </div>
     </div>
   );

@@ -1,12 +1,11 @@
 import React from "react";
 import data from "../utils/data.json";
-import Techs from "./Techs";
 
 function About() {
   return (
     <>
       <div className="text-white mt-32" id="about">
-        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
+        <h1 className="text-7xl sm:text-8xl md:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>About
         </h1>
         <div className="text-xl font-semibold md:max-w-xl">
@@ -18,9 +17,6 @@ function About() {
             I'm always looking for new challenges and opportunities to learn new
             things and improve my skills.
           </p>
-        </div>
-        <div>
-          <Techs />
         </div>
       </div>
       <div className="overflow-hidden">

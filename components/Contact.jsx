@@ -4,7 +4,6 @@ import Confetti from "react-confetti";
 import emailjs from "emailjs-com";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { check } from "../utils/exportImages";
 
 function Contact() {
   const [confetti, setConfetti] = useState(false);
@@ -44,7 +43,7 @@ function Contact() {
   return (
     <div className="relative" id="contact">
       <div className="text-white mt-32">
-        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
+        <h1 className="text-7xl sm:text-8xl md:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>Contact
         </h1>
       </div>
@@ -57,7 +56,7 @@ function Contact() {
         onSubmit={formik.handleSubmit}
         className="flex justify-center items-center flex-col"
       >
-        <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2 max-w-2xl sm:w-screen sm:place-items-center sm:justify-center sm:items-center">
+        <div className="grid grid-cols-1 gap-3 mt-10 md:grid-cols-2 max-w-xl sm:w-screen sm:place-items-center sm:justify-center sm:items-center">
           <input
             name="subject"
             id="subject"
