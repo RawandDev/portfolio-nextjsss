@@ -20,11 +20,20 @@ export default function Home() {
               things and challenges<span className="text-secondary">.</span>
             </p>
           </div>
-          <Link href="/work">
-            <a className="bg-white border-2 text-black hover:bg-black hover:text-white font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl">
+          <div className="mt-4">
+            <a
+              href="#work"
+              className="bg-white border-2 text-black hover:bg-black hover:text-white font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl mr-4"
+            >
               Projects
             </a>
-          </Link>
+            <a
+              href="#work"
+              className="bg-black border-2 text-white hover:bg-white hover:text-black font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl"
+            >
+              Contact
+            </a>
+          </div>
         </div>
         <div>
           <Image
