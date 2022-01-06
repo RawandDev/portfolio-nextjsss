@@ -24,6 +24,22 @@ function Footer() {
           </li>
           <li>
             <a
+              href="https://www.linkedin.com/in/rawand-kamal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="md:mr-4"
+            >
+              <Image
+                src="/images/linkedin.svg"
+                alt="linkedin"
+                width={30}
+                height={30}
+                className="transform hover:rotate-6 transition-transform duration-200"
+              />
+            </a>
+          </li>
+          <li>
+            <a
               href="https://twitter.com/ErFyDev"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +72,7 @@ function Footer() {
         </ul>
         <div>
           <p className="text-center text-xs mb-4 sm:mb-0">
-            © 2021 Rawand Kamal
+            © 2022 Rawand Kamal
           </p>
         </div>
         <div>

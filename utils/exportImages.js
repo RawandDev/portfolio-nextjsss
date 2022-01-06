@@ -21,3 +21,4 @@ export const javascript = require("../public/images/javascript.svg");
 export const firebase = require("../public/images/firebase.svg");
 export const tailwindcss = require("../public/images/tailwindcss.svg");
 export const framer = require("../public/images/framer.svg");
+export const linkedin = require("../public/images/linkedin.svg");
