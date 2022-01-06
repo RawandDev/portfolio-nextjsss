@@ -1,10 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-import { particle } from "../utils/exportImages";
-import Testimonials from "../components/Testimonials";
 import Work from "../components/Work/Work";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Techs from "../components/Techs";
 
 export default function Home() {
   return (
@@ -47,11 +45,16 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center opacity-30 mb-20">
-        <Image src={particle} alt="particle" />
+        <Image
+          src="/images/particle.svg"
+          width={80}
+          height={80}
+          alt="particle"
+        />
       </div>
+      <Techs />
       <Work />
       <About />
-      {/* <Testimonials /> */}
       <Contact />
     </>
   );
