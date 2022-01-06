@@ -4,7 +4,7 @@ import DisplayWork from "./DisplayWork";
 function Work() {
   return (
     <>
-      <div className="text-white mt-32" id="work">
+      <div className="dark:text-white mt-32" id="work">
         <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>Work
         </h1>
@@ -14,7 +14,7 @@ function Work() {
             source code as well as demo for each one of them.
           </p>
         </div>
-        <div className="text-white">
+        <div className="dark:text-white">
           <div className="relative">
             <DisplayWork />
           </div>

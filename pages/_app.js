@@ -8,7 +8,7 @@ import NextNProgress from "nextjs-progressbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="font-body mx-4 sm:mx-20">
+    <div className="font-body px-4 sm:px-20 dark:bg-primary bg-[#FFF8F3]">
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

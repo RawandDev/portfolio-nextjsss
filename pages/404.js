@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Custom404() {
   return (
-    <div className="flex flex-col justify-center items-center mt-20 text-white">
+    <div className="flex flex-col justify-center items-center mt-20 darktext-white">
       <h1 className="font-bold text-2xl">Page Not Found</h1>
       <p className="text-lg">
         It looks like the page you are looking for was not found
@@ -14,8 +14,8 @@ function Custom404() {
           <a>Home</a>
         </Link>
       </button>
-      <div className="max-w-lg sm:max-w-2xl">
-        <Image src="/images/error.svg" alt="error" />
+      <div className="bg-black rounded-full max-w-lg sm:max-w-2xl">
+        <Image src="/images/error.svg" alt="error" width={300} height={300} />
       </div>
     </div>
   );

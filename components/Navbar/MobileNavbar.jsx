@@ -1,11 +1,11 @@
 import React from "react";
-import Link from "next/link";
+import ToggleDarkMode from "./ToggleDarkMode";
 
 function MobileNavbar({ isOpened }) {
   return (
     <>
       {isOpened && (
-        <ul className="md:hidden flex flex-col text-white text-xl">
+        <ul className="md:hidden flex flex-col dark:text-white text-xl">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -18,6 +18,7 @@ function MobileNavbar({ isOpened }) {
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <ToggleDarkMode />
         </ul>
       )}
     </>

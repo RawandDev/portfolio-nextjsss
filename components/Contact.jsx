@@ -42,12 +42,12 @@ function Contact() {
 
   return (
     <div className="relative" id="contact">
-      <div className="text-white mt-32">
+      <div className="dark:text-white mt-32">
         <h1 className="text-7xl sm:text-8xl md:text-9xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>Contact
         </h1>
       </div>
-      <div className="text-white mb-4">
+      <div className="dark:text-white mb-4">
         <p className="text-lg font-medium">
           I'm currently looking for new opportunities. Don't be shy to say Hi!
         </p>
@@ -66,7 +66,7 @@ function Contact() {
               formik.errors.subject && formik.touched.subject
                 ? "border-red-500"
                 : "border-white"
-            } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
+            } border-opacity-50 dark:text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
             autoComplete="off"
             {...formik.getFieldProps("subject")}
           />
@@ -78,7 +78,7 @@ function Contact() {
               formik.errors.email && formik.touched.email
                 ? "border-red-500"
                 : "border-white"
-            } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
+            } border-opacity-50 dark:text-white focus:outline-none focus:border-opacity-100 transition-all duration-300`}
             autoComplete="off"
             {...formik.getFieldProps("email")}
           />
@@ -89,13 +89,13 @@ function Contact() {
               formik.errors.message && formik.touched.message
                 ? "border-red-500"
                 : "border-white"
-            } border-opacity-50 text-white focus:outline-none focus:border-opacity-100 transition-all duration-300 col-span-2 sm:w-96 mt-3 h-20`}
+            } border-opacity-50 dark:text-white focus:outline-none focus:border-opacity-100 transition-all duration-300 col-span-2 sm:w-96 mt-3 h-20`}
             autoComplete="off"
             {...formik.getFieldProps("message")}
           />
         </div>
         <button
-          className="bg-white text-black font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gray-100 hover:text-black focus:outline-none focus:shadow-outline transition-all duration-300 my-5"
+          className="dark:bg-white text-black font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-gray-100 hover:text-black focus:outline-none focus:shadow-outline transition-all duration-300 my-5"
           type="submit"
           disabled={formik.isSubmitting}
         >
@@ -111,14 +111,14 @@ function Contact() {
         />
       )}
       {confetti && (
-        <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md animate-pulse absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="flex w-full max-w-sm mx-auto overflow-hidden dark:bg-white rounded-lg shadow-md animate-pulse absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex items-center justify-center w-12 bg-green-500">
             <Image src={check} width={30} height={30} alt="check" />
           </div>
           <div className="px-4 py-2 -mx-3">
             <div className="mx-3">
-              <span className="font-semibold text-green-500">Success</span>
-              <p className="text-sm text-gray-600 dark:text-gray-200">
+              <span className="font-semibold dark:text-green-500">Success</span>
+              <p className="text-sm text-gray-600">
                 Email has been sent successfully.
               </p>
             </div>

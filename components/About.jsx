@@ -4,7 +4,7 @@ import data from "../utils/data.json";
 function About() {
   return (
     <>
-      <div className="text-white mt-32" id="about">
+      <div className="dark:text-white mt-32" id="about">
         <h1 className="text-7xl sm:text-8xl md:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>About
         </h1>
@@ -20,15 +20,15 @@ function About() {
         </div>
       </div>
       <div className="overflow-hidden">
-        <h2 className="text-center text-white font-extrabold text-2xl mt-10">
+        <h2 className="text-center dark:text-white font-extrabold text-2xl mt-10">
           Achievements
         </h2>
-        <ul className="relative text-white ml-10 text-lg flex flex-col justify-center items-center">
+        <ul className="relative dark:text-white ml-10 text-lg flex flex-col justify-center items-center">
           {data?.map((item, index) => {
             return (
               <div
                 key={index}
-                className="max-w-md relative pb-10 mb-10 cursor-pointer shadow-xl rounded-lg hover:bg-indigo-800 transition-all duration- overflow-visible"
+                className="max-w-md relative pb-10 mb-10 cursor-pointer shadow-xl rounded-lg dark:hover:bg-black transition-all duration- overflow-visible"
               >
                 <svg
                   width="42"
@@ -43,11 +43,11 @@ function About() {
                     cx="21.5"
                     cy="21.5"
                     r="20"
-                    fill="#27187E"
-                    stroke="#00FFD1"
+                    fill="#fff"
+                    stroke="#FF5DA2"
                     strokeWidth="3"
                   />
-                  <circle cx="21.5" cy="21.5" r="13.5" fill="#00FFD1" />
+                  <circle cx="21.5" cy="21.5" r="13.5" fill="#FF5DA2" />
                 </svg>
                 <span className="font-semibold">{item?.date}: </span>
                 {item?.brief}

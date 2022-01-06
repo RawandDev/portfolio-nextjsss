@@ -12,9 +12,5 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: #27187e;
-}
-
-.test {
-  background: #ffffff;
+  /* background: #27187e; */
 }

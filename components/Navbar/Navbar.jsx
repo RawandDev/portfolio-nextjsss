@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import Logo from "../../public/images/logo.svg";
 import MobileNavbar from "./MobileNavbar";
 import NavbarButtons from "../Navbar/NavbarButtons";
+import Image from "next/image";
+import ToggleDarkMode from "./ToggleDarkMode";
 
 function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
     <div>
-      <div className="text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between relative">
-        <div>
+      <div className="dark:text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between relative">
+        <div className="p-3 text-xl">
           <a href="#home">
-            <Image src={Logo} alt="logo" />
+            Ra<span className="text-secondary">wand</span>
           </a>
         </div>
         <div>
@@ -29,6 +29,7 @@ function Navbar() {
             <li>
               <a href="#contact">Contact</a>
             </li>
+            <ToggleDarkMode />
           </ul>
         </div>
         <NavbarButtons isOpened={isOpened} setIsOpened={setIsOpened} />
