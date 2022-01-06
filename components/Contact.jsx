@@ -5,9 +5,8 @@ import emailjs from "emailjs-com";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { check } from "../utils/exportImages";
-import { motion } from "framer-motion";
 
-function contact() {
+function Contact() {
   const [confetti, setConfetti] = useState(false);
 
   const formik = useFormik({
@@ -43,15 +42,11 @@ function contact() {
   });
 
   return (
-    <div>
+    <div className="relative">
       <div className="text-white mt-32">
-        <motion.h1
-          initial={{ x: -100 }}
-          animate={{ x: 0 }}
-          className="text-7xl sm:text-10xl font-extrabold opacity-30"
-        >
+        <h1 className="text-7xl sm:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>Contact
-        </motion.h1>
+        </h1>
       </div>
       <div className="text-white mb-4">
         <p className="text-lg font-medium">
@@ -111,21 +106,19 @@ function contact() {
       {confetti && (
         <Confetti
           width={window.innerWidth - 200}
-          height={window.innerHeight - 200}
+          height={window.innerHeight}
           numberOfPieces={100}
           recycle={false}
         />
       )}
       {confetti && (
-        <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 animate-pulse absolute top-10 right-0 left-0">
+        <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md animate-pulse absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex items-center justify-center w-12 bg-green-500">
             <Image src={check} width={30} height={30} alt="check" />
           </div>
           <div className="px-4 py-2 -mx-3">
             <div className="mx-3">
-              <span className="font-semibold text-green-500 dark:text-green-400">
-                Success
-              </span>
+              <span className="font-semibold text-green-500">Success</span>
               <p className="text-sm text-gray-600 dark:text-gray-200">
                 Email has been sent successfully.
               </p>
@@ -137,4 +130,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;

@@ -14,3 +14,7 @@ body {
   box-sizing: border-box;
   background: #27187e;
 }
+
+.test {
+  background: #ffffff;
+}

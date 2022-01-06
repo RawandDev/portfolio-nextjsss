@@ -4,6 +4,7 @@ import Link from "next/link";
 import Logo from "../public/images/logo.svg";
 import MobileNavbar from "./MobileNavbar";
 import NavbarButtons from "./NavbarButtons";
+import styles from "../styles/Home.module.css";
 
 function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
@@ -11,25 +12,35 @@ function Navbar() {
   return (
     <div>
       <div className="text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between relative">
-        <Link href="/">
-          <a>
-            <Image src={Logo} alt="logo" />
-          </a>
-        </Link>
+        <div className={styles.nav}>
+          <Link href="/">
+            <a>
+              <Image src={Logo} alt="logo" />
+            </a>
+          </Link>
+        </div>
         <div>
           <ul className="md:flex md:justify-between md:w-96 text-xl hidden">
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-            <Link href="/work">
-              <a>Work</a>
-            </Link>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
+            <li className={styles.nav}>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li className={styles.nav}>
+              <Link href="/work">
+                <a>Work</a>
+              </Link>
+            </li>
+            <li className={styles.nav}>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </li>
+            <li className={styles.nav}>
+              <Link href="/contact">
+                <a>Contact</a>
+              </Link>
+            </li>
           </ul>
         </div>
         <NavbarButtons isOpened={isOpened} setIsOpened={setIsOpened} />
