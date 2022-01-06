@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { particle } from "../utils/exportImages";
 import Testimonials from "../components/Testimonials";
-import Work from "../components/Work";
+import Work from "../components/Work/Work";
 import About from "../components/About";
 import Contact from "../components/Contact";
 

@@ -2,7 +2,7 @@ import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 import Head from "next/head";
 import Script from "next/script";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 import NextNProgress from "nextjs-progressbar";
 

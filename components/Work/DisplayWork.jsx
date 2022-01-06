@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import workData from "../utils/work.json";
+import workData from "../../utils/work.json";
 
 function DisplayWork() {
   return (

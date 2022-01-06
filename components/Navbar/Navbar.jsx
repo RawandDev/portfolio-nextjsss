@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../public/images/logo.svg";
+import Logo from "../../public/images/logo.svg";
 import MobileNavbar from "./MobileNavbar";
-import NavbarButtons from "./NavbarButtons";
+import NavbarButtons from "../Navbar/NavbarButtons";
 
 function Navbar() {
   const [isOpened, setIsOpened] = useState(false);

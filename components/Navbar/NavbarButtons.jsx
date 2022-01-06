@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import menu from "../public/images/menu.svg";
-import close from "../public/images/close.svg";
+import menu from "../../public/images/menu.svg";
+import close from "../../public/images/close.svg";
 
 function NavbarButtons({ isOpened, setIsOpened }) {
   return (
