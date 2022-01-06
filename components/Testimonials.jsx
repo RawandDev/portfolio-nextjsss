@@ -65,7 +65,12 @@ function Testimonials() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Image src="/images/github.svg" width={25} height={25} />
+                      <Image
+                        src="/images/github.svg"
+                        width={25}
+                        height={25}
+                        alt="github"
+                      />
                     </a>
                   </div>
                   <div>
@@ -78,6 +83,7 @@ function Testimonials() {
                         src="/images/linkedin.svg"
                         width={25}
                         height={25}
+                        alt="linkedin"
                       />
                     </a>
                   </div>

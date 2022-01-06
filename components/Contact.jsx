@@ -43,7 +43,7 @@ function Contact() {
   return (
     <div className="relative" id="contact">
       <div className="text-white mt-32">
-        <h1 className="text-7xl sm:text-8xl md:text-10xl font-extrabold opacity-30">
+        <h1 className="text-7xl sm:text-8xl md:text-9xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>Contact
         </h1>
       </div>

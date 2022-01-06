@@ -26,7 +26,7 @@ export default function Home() {
               Projects
             </a>
             <a
-              href="#work"
+              href="#contact"
               className="bg-black border-2 text-white hover:bg-white hover:text-black font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl"
             >
               Contact
