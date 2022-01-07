@@ -45,7 +45,7 @@ function DisplayWork() {
                     rel="noopener noreferrer"
                     className="mr-4"
                   >
-                    <button className="bg-transparent border-2 dark:text-white hover:bg-gray-200 hover:text-black font-medium py-1 px-3 hover-transition duration-300 underline">
+                    <button className="bg-transparent border-2 dark:text-white dark:hover:bg-gray-200 dark:hover:text-black bg-black text-white hover:bg-white hover:text-black font-medium py-1 px-3 hover-transition duration-300 underline">
                       Demo
                     </button>
                   </a>
@@ -54,7 +54,7 @@ function DisplayWork() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="dark:bg-black border-2 dark:border-black dark:text-white hover:bg-white hover:text-black hover:border-white font-medium py-1 px-3 underline">
+                    <button className="dark:bg-black border-2 dark:border-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:hover:border-white bg-white text-black hover:bg-black hover:text-white font-medium py-1 px-3 underline">
                       Github
                     </button>
                   </a>

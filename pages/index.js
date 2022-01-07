@@ -22,13 +22,13 @@ export default function Home() {
           <div className="mt-4">
             <a
               href="#work"
-              className="dark:bg-white border-2 dark:text-black dark:hover:bg-black dark:hover:text-white font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl mr-4"
+              className="dark:bg-white border-2 dark:text-black dark:hover:bg-black dark:hover:text-white bg-black text-white hover:bg-white hover:text-black font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl mr-4"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="dark:bg-black border-2 dark:text-white dark:hover:bg-white dark:hover:text-black font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl"
+              className="dark:bg-black border-2 dark:text-white dark:hover:bg-white dark:hover:text-black bg-white text-black hover:bg-black hover:text-white font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl"
             >
               Contact
             </a>

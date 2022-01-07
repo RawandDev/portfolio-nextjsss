@@ -62,7 +62,7 @@ function Contact() {
             id="subject"
             type="text"
             placeholder="Subject"
-            className={`bg-transparent border-b-2 ${
+            className={`bg-transparent border-b-2 dark:border-gray-400 border-gray-800 ${
               formik.errors.subject && formik.touched.subject
                 ? "border-red-500"
                 : "border-white"
@@ -74,7 +74,7 @@ function Contact() {
             name="email"
             type="email"
             placeholder="Email"
-            className={`bg-transparent border-b-2 ${
+            className={`bg-transparent border-b-2 dark:border-gray-400 border-gray-800 ${
               formik.errors.email && formik.touched.email
                 ? "border-red-500"
                 : "border-white"
@@ -85,7 +85,7 @@ function Contact() {
           <textarea
             name="message"
             placeholder="Your Message"
-            className={`bg-transparent border-b-2 ${
+            className={`bg-transparent border-b-2 dark:border-gray-400 border-gray-800 ${
               formik.errors.message && formik.touched.message
                 ? "border-red-500"
                 : "border-white"
@@ -113,7 +113,7 @@ function Contact() {
       {confetti && (
         <div className="flex w-full max-w-sm mx-auto overflow-hidden dark:bg-white rounded-lg shadow-md animate-pulse absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="flex items-center justify-center w-12 bg-green-500">
-            <Image src={check} width={30} height={30} alt="check" />
+            <Image src="/images/check.svg" width={30} height={30} alt="check" />
           </div>
           <div className="px-4 py-2 -mx-3">
             <div className="mx-3">
