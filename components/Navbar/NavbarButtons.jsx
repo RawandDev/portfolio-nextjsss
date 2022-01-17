@@ -17,7 +17,7 @@ function NavbarButtons({ isOpened, setIsOpened }) {
             width={40}
             height={40}
             alt="menu-open"
-            className="cursor-pointer"
+            className="cursor-pointer dark:bg-transparent bg-gray-800 rounded-md"
           />
         ) : (
           <Image
@@ -25,7 +25,7 @@ function NavbarButtons({ isOpened, setIsOpened }) {
             width={40}
             height={40}
             alt="menu-close"
-            className="cursor-pointer"
+            className="cursor-pointer dark:bg-transparent bg-gray-800 rounded-md"
           />
         )}
       </button>
