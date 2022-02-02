@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function Techs() {
+function Techs({ offsetY }) {
   const techs = [
     {
       name: "JavaScript",
@@ -55,7 +55,7 @@ function Techs() {
 
   return (
     <div>
-      <h2 className="text-center dark:text-white font-extrabold text-2xl mt-10 mb-2">
+      <h2 className="text-center dark:text-white font-extrabold text-2xl mt-10 mb-2 relative">
         Technical Skills
       </h2>
       <div className="text-lg grid grid-cols-2 md:grid-cols-4 gap-y-8 text-center">
@@ -67,6 +67,15 @@ function Techs() {
             </span>
           </div>
         ))}
+        <div
+          style={{
+            transform: `translateY(${offsetY * -0.3}px)`,
+            opacity: 0.3 + offsetY * 0.001,
+            position: "absolute",
+          }}
+        >
+          <Image src="/images/circle.svg" height={90} width={90} alt="circle" />
+        </div>
       </div>
     </div>
   );

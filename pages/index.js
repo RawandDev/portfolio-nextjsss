@@ -6,9 +6,27 @@ import Contact from "../components/Contact";
 import Techs from "../components/Techs";
 
 export default function Home() {
+  const [offsetY, setOffsetY] = useState(0);
+
+  // create a parallax scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.pageYOffset);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row mt-20">
+      <section
+        className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row mt-20"
+        style={{
+          transform: `translateY(${offsetY * -0.3}px)`,
+        }}
+      >
         <div className="dark:text-white text-3xl sm:max-w-2xl sm:flex sm:flex-col sm:items-left mb-4">
           <div>
             <p>
@@ -18,6 +36,22 @@ export default function Home() {
               I’m Rawand, a passionate web developer who enjoys trying new
               things and challenges<span className="text-secondary">.</span>
             </p>
+          </div>
+          <div
+            style={{
+              transform: `translateY(${offsetY * -0.6}px)`,
+              opacity: 0.3 + offsetY * 0.001,
+              position: "absolute",
+              left: "20%",
+              top: "20%",
+            }}
+          >
+            <Image
+              src="/images/squares.svg"
+              height={90}
+              width={90}
+              alt="squares"
+            />
           </div>
           <div className="mt-4">
             <a
@@ -44,8 +78,8 @@ export default function Home() {
             objectFit="cover"
           />
         </div>
-      </div>
-      <Techs />
+      </section>
+      <Techs offsetY={offsetY} />
       <Work />
       <About />
       <Contact />
