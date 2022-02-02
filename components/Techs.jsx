@@ -60,8 +60,17 @@ function Techs({ offsetY }) {
       </h2>
       <div className="text-lg grid grid-cols-2 md:grid-cols-4 gap-y-8 text-center">
         {techs.map((tech, index) => (
-          <div key={index} className="grid">
-            <Image src={tech.logo} width={65} height={65} alt={tech.name} />
+          <div
+            key={index}
+            className="grid mx-10 lg:mx-20 shadow cursor-pointer ring-gray-800 dark:ring-white hover:ring-2 bg-gray-200 dark:bg-gray-800 rounded-md"
+          >
+            <Image
+              src={tech.logo}
+              width={65}
+              height={65}
+              alt={tech.name}
+              className=""
+            />
             <span className="font-semibold text-sm ml-2 dark:text-white">
               {tech.name}
             </span>
