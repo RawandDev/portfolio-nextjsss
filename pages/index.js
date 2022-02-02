@@ -33,8 +33,9 @@ export default function Home() {
               Hello there<span className="text-secondary">.</span>
             </p>
             <p>
-              I’m Rawand, a passionate web developer who enjoys trying new
-              things and challenges<span className="text-secondary">.</span>
+              I’m <span className="font-bold">Rawand</span>, a passionate web
+              developer who enjoys trying new things and challenges
+              <span className="text-secondary">.</span>
             </p>
           </div>
           <div
@@ -70,7 +71,7 @@ export default function Home() {
         </div>
         <div>
           <Image
-            src="https://i.imgur.com/LhEB9x9.jpeg"
+            src="https://i.imgur.com/tRjYq6t.jpeg"
             alt="avatar"
             className="rounded-full z-10"
             width={400}
