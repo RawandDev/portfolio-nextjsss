@@ -32,18 +32,24 @@ function ToggleDarkMode() {
   return (
     <div>
       {toggleMode === "light" ? (
-        <li onClick={handleModeChange} className="cursor-pointer">
+        <button
+          onClick={handleModeChange}
+          className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center ring-gray-300 hover:ring-2"
+        >
           <Image src="/images/moon.svg" height={25} width={35} />
-        </li>
+        </button>
       ) : (
-        <li onClick={handleModeChange}>
+        <button
+          onClick={handleModeChange}
+          className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-700 flex items-center justify-center hover:ring-2 ring-gray-300"
+        >
           <Image
             src="/images/sun.svg"
             height={25}
             width={35}
             className="cursor-pointer"
           />
-        </li>
+        </button>
       )}
     </div>
   );
