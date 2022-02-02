@@ -32,7 +32,7 @@ function DisplayWork() {
                   className="rounded-md object-contain"
                 />
               </a>
-              <div className="dark:text-white text-center mt-3">
+              <div className="dark:text-white text-center mt-3 max-w-xl">
                 <h1 className="text-2xl font-semibold">{work.title}</h1>
                 <p>{work.description}</p>
                 <p>
@@ -50,11 +50,17 @@ function DisplayWork() {
                     </button>
                   </a>
                   <a
-                    href={work.github}
+                    href={work.github || "https://github.com/RawandDev"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="dark:bg-black border-2 dark:border-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:hover:border-white bg-white text-black hover:bg-black hover:text-white font-medium py-1 px-3 underline">
+                    <button
+                      className={`dark:bg-black border-2 dark:border-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:hover:border-white bg-white text-black hover:bg-black hover:text-white font-medium py-1 px-3 underline ${
+                        work.github
+                          ? "hover-transition duration-300"
+                          : "opacity-50"
+                      }`}
+                    >
                       Github
                     </button>
                   </a>
