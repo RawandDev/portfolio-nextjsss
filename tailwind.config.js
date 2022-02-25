@@ -13,6 +13,9 @@ module.exports = {
       fontSize: {
         "10xl": "10rem",
       },
+      rotate: {
+        360: "360deg",
+      },
     },
   },
   variants: {

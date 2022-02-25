@@ -4,9 +4,11 @@ import Work from "../components/Work/Work";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Techs from "../components/Techs";
+import glass from "../public/images/glass.svg";
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);
+  const [isImageShown, setIsImageShown] = useState(false);
 
   // create a parallax scroll effect
   useEffect(() => {
@@ -19,6 +21,10 @@ export default function Home() {
     };
   }, []);
 
+  function handleShowGlass() {
+    setIsImageShown(true);
+  }
+
   return (
     <>
       <section
@@ -27,7 +33,7 @@ export default function Home() {
           transform: `translateY(${offsetY * -0.3}px)`,
         }}
       >
-        <div className="dark:text-white text-3xl sm:max-w-2xl sm:flex sm:flex-col sm:items-left mb-4">
+        <div className="dark:text-white text-3xl sm:max-w-2xl sm:flex sm:flex-col sm:items-left mb-4 lg:w-2/4">
           <div>
             <p>
               Hello there<span className="text-secondary">.</span>
@@ -70,14 +76,30 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <Image
-            src="https://i.imgur.com/tRjYq6t.jpeg"
-            alt="avatar"
-            className="rounded-full z-10"
-            width={400}
-            height={400}
-            objectFit="cover"
-          />
+          <div className="relative">
+            <div className="absolute right-20 top-16 mt-1 z-20 sm:mt-3 sm:mr-2">
+              {isImageShown && (
+                <Image
+                  src={glass}
+                  alt="glass"
+                  className="transform -rotate-6 transition-all duration-1000 ease-in-out hover:rotate-360"
+                  width={45}
+                  height={45}
+                />
+              )}
+            </div>
+            <div>
+              <Image
+                src="https://i.imgur.com/tRjYq6t.jpeg"
+                alt="avatar"
+                className="rounded-full z-10 cursor-pointer mt-10"
+                width={400}
+                height={400}
+                objectFit="cover"
+                onClick={handleShowGlass}
+              />
+            </div>
+          </div>
         </div>
       </section>
       <Techs offsetY={offsetY} />
