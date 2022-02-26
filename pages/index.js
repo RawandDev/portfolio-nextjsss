@@ -5,6 +5,7 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Techs from "../components/Techs";
 import glass from "../public/images/glass.svg";
+import cig from "../public/images/cig.png";
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);
@@ -22,7 +23,7 @@ export default function Home() {
   }, []);
 
   function handleShowGlass() {
-    setIsImageShown(true);
+    setIsImageShown((prev) => !prev);
   }
 
   return (
@@ -82,9 +83,20 @@ export default function Home() {
                 <Image
                   src={glass}
                   alt="glass"
-                  className="transform -rotate-6 transition-all duration-1000 ease-in-out hover:rotate-360"
+                  className="transform -rotate-6 transition-all duration-300 ease-in-out hover:rotate-360"
                   width={45}
                   height={45}
+                />
+              )}
+            </div>
+            <div className="absolute right-20 top-28 z-30 sm:mt-2 sm:mr-7">
+              {isImageShown && (
+                <Image
+                  src={cig}
+                  alt="cig"
+                  className="transform -rotate-6 transition-all duration-300 ease-in-out hover:rotate-360"
+                  width={25}
+                  height={25}
                 />
               )}
             </div>
