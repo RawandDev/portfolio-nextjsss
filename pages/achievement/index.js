@@ -7,7 +7,7 @@ function Achievements() {
     <div>
       {data?.map((item, index) => {
         return (
-          <Link href={`achievement/${item?.id}`} key={index}>
+          <Link href={`/achievement/${item?.id}`} key={index}>
             <a>
               <div className="max-w-md relative pb-10 mb-10 cursor-pointer shadow-xl rounded-lg dark:hover:bg-gray-800 hover:bg-gray-100 transition-all duration- overflow-visible">
                 <svg
