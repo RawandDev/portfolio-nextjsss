@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../../utils/data.json";
 import Image from "next/image";
+import reactReplace from "react-string-replace";
 
 export async function getStaticProps({ params }) {
   const { id } = params;
@@ -25,7 +26,17 @@ function AchievementDetail({ about }) {
       {about?.date}: {about?.brief}
       <h1 className="font-bold text-2xl">{about?.title}</h1>
       <span className="text-sm mb-4">{about?.date}</span>
-      <p className="max-w-4xl font-medium text-lg">{about?.content}</p>
+      <p className="max-w-4xl font-medium text-lg">
+        {reactReplace(about?.content, "Libvery", (match, i) => (
+          <a
+            className="underline text-blue-600"
+            href="https://libvery.netlify.app"
+            key={i}
+          >
+            {match}
+          </a>
+        ))}
+      </p>
       {about?.imageURL1 && about?.imageURL2 && (
         <div>
           <Image
