@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import Techs from "../components/Techs";
 import glass from "../public/images/glass.svg";
 import cig from "../public/images/cig.png";
+// import resume from "../public/images/RawandKamal.pdf";
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);
@@ -69,10 +70,12 @@ export default function Home() {
               Projects
             </a>
             <a
-              href="#contact"
+              href="images/RawandKamal.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="dark:bg-black border-2 dark:text-white dark:hover:bg-white dark:hover:text-black bg-white text-black hover:bg-black hover:text-white font-medium py-1 px-4 hover-transition duration-300 rounded-sm w-36 mt-4 text-2xl"
             >
-              Contact
+              Resume
             </a>
           </div>
         </div>
