@@ -30,6 +30,7 @@ export default function Home() {
   return (
     <>
       <section
+        id="home"
         className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row pt-20"
         style={{
           transform: `translateY(${offsetY * -0.3}px)`,
