@@ -4,7 +4,7 @@ import Achievements from "../pages/achievement";
 function About() {
   return (
     <>
-      <div className="dark:text-white mt-32" id="about">
+      <section className="dark:text-white mt-32" id="about">
         <h1 className="text-7xl sm:text-8xl md:text-10xl font-extrabold opacity-30">
           <span className="text-secondary">.</span>About
         </h1>
@@ -18,7 +18,7 @@ function About() {
             things and improve my skills.
           </p>
         </div>
-      </div>
+      </section>
       <div className="overflow-hidden">
         <h2 className="text-center dark:text-white font-extrabold text-2xl mt-10">
           Achievements

@@ -54,7 +54,7 @@ function Techs({ offsetY }) {
   ];
 
   return (
-    <div>
+    <section>
       <h2 className="text-center dark:text-white font-extrabold text-2xl mt-10 mb-2 relative">
         Technical Skills
       </h2>
@@ -86,7 +86,7 @@ function Techs({ offsetY }) {
           <Image src="/images/circle.svg" height={90} width={90} alt="circle" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

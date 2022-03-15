@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <div className="fixed bg-white dark:bg-primary top-0 left-0 px-10 z-20 w-full">
-      <div className="dark:text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between relative pt-3">
+      <nav className="dark:text-white md:flex md:justify-between md:items-center transform transition-all top-0 z-10 flex justify-between relative pt-3">
         <div className="p-3 text-xl">
           {router.pathname.includes("/achievement") ? (
             <Link href="/">
@@ -71,7 +71,7 @@ function Navbar() {
           </ul>
         </div>
         <NavbarButtons isOpened={isOpened} setIsOpened={setIsOpened} />
-      </div>
+      </nav>
       <MobileNavbar isOpened={isOpened} setIsOpened={setIsOpened} />
     </div>
   );

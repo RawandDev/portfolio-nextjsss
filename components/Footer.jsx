@@ -4,7 +4,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <div className="border-t-2 border-opacity-30 p-4 md:flex md:justify-between md:items-center text-white">
+      <footer className="border-t-2 border-opacity-30 p-4 md:flex md:justify-between md:items-center text-white">
         <ul className="flex justify-around items-center mb-4 sm:mb-0">
           <li>
             <a
@@ -82,7 +82,7 @@ function Footer() {
             </a>
           </p>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

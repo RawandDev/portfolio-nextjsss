@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <section
+      <main
         id="home"
         className="flex flex-col justify-center items-center lg:flex lg:justify-around lg:flex-row pt-20"
         style={{
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </main>
       <Techs offsetY={offsetY} />
       <Work />
       <About />
