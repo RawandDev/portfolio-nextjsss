@@ -23,8 +23,7 @@ export async function getStaticPaths() {
 function AchievementDetail({ about }) {
   return (
     <div className="text-black dark:text-white flex flex-col justify-center items-center mt-10 lg:text-center">
-      {about?.date}: {about?.brief}
-      <h1 className="font-bold text-2xl">{about?.title}</h1>
+      <h1 className="font-bold text-2xl mt-10">{about?.title}</h1>
       <span className="text-sm mb-4">{about?.date}</span>
       <p className="max-w-4xl font-medium text-lg">
         {reactReplace(about?.content, "Libvery", (match, i) => (

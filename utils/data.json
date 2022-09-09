@@ -1,5 +1,12 @@
 [
   {
+    "id": "first-job",
+    "title": "Landed my first job!",
+    "date": "1st April, 2022",
+    "content": "Alhamdulillah, I just landed my first job at Gateway ICT Solutions as a Frontend Web Developer. I started applying through Linkedin hoping that I could get a job to add some value to a company and gain some experience. I got messages and replies from most of the companies that I applied for. But unfortunately, I couldn't get the job because they were not remote jobs. One day, I received a reply from a senior developer at Gateway ICT Solutions and that was when the journey began. Thanks to him and the company for trusting and giving me this opportunity. As I'm writing this, it has been almost 6 months in the job and I have got to know many nice people and learned a lot. The team is quite supportive and I'm enjoying my work. I'm looking forward to working with them for a long time.",
+    "brief": "I just landed my first job as Frontend web developer! 🙌🥳"
+  },
+  {
     "id": "graduated-recoded",
     "title": "Graduated at Re:Coded",
     "date": "8th November, 2021",
@@ -21,7 +28,7 @@
     "id": "software-department",
     "title": "Software Engineering Department",
     "date": "11th November, 2020",
-    "content": "I got into my dream department which is Software Engineering or CS related departments at college. I got into Koya University which is one of the most beautiful college in Kurdistan. I'm currently a sophomore student.",
+    "content": "I got into my dream department which is Software Engineering or CS related departments at college. I got into Koya University which is one of the most beautiful college in Kurdistan. I'm currently a junior(3rd grade) student.",
     "brief": "Got into Software Engineering department.",
     "imageURL1": "https://i.imgur.com/mggDaiX.jpeg",
     "imageURL2": "https://i.imgur.com/6GhJonS.jpeg"
@@ -31,7 +38,6 @@
     "title": "My Journey Began",
     "date": "1st June, 2020",
     "content": "I really wanted to code and learn programming. At first, I was at Medical Laboratory College but I didn't like it. Honestly it was one of the hardest decision that I made because I spent a whole year in Medical Laboratory College and I needed to switch to Software Engineering department. Everyone tried to convince me to stay at MLT department but I always had that passion for SE department and learn to code. So I started to switch to SE department and learn programming in June, 2020 with so much passion and excitement even though I had no prior experience. First I tried to learn PHP without knowning why and what I can do with it. I spent a few weeks to months on PHP but then I found freeCodeCamp, basically freeCodeCamp is a non-profit organization where you can learn to code for free. I started with HTML, CSS and JavaScript course in fCC. This was when my journey started and began to fall in love with programming. Now I know some technologies such as JavaScript, Reactjs, Nextjs and Firebase. I'm really glad that I chose this field and always looking forward to learn more.",
-    "brief": "My Programming Journey Began",
-    "imageURL1": "https://i.imgur.com/7igwXbz.jpeg"
+    "brief": "My Programming Journey Began"
   }
 ]
