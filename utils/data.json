@@ -12,8 +12,16 @@
     "date": "8th November, 2021",
     "content": "I was working on a team of 4 developers and a trainer. We managed to create an application for people who wants to buy/sell books, it is called Libvery. We received the certification after 3 months of intense learning. Honestly, it was an intense 3 months of bootcamp which included many assignments but we also had fun activities and social committe which made the environment much more nicer. I'm really glad that I found Re:Coded and got to know such amazing people with different ideas.",
     "brief": "Graduated the Reactjs Web Development Bootcamp at Re:Coded 🎉",
-    "imageURL1": "https://i.imgur.com/8FOQDEa.jpeg",
-    "imageURL2": "https://i.imgur.com/7igwXbz.jpeg"
+    "images": [
+      {
+        "src": "https://i.imgur.com/8FOQDEa.jpeg",
+        "alt": "Graduation certificate"
+      },
+      {
+        "src": "https://i.imgur.com/7igwXbz.jpeg",
+        "alt": "Dedicated hours"
+      }
+    ]
   },
   {
     "id": "joined-recoded",
@@ -21,8 +29,16 @@
     "date": "8th August, 2021",
     "content": "Re:Coded React Bootcamp was a game changer for me. I applied for this bootcamp not only for coding but mostly for networking and knowing how to communicate efficiently. It was quite competitive to get accpeted since there were more than 400 applicants but only 22 students made it. You must have run into 4 different phases about filling application, coding, mindset and interviewing. Before joing the bootcamp I had no idea about how to communicate properly with people around me, especially when it comes to programming. Now I feel that I'm getting better and feel more comfortable working in a team.",
     "brief": "Participated in Reactjs Bootcamp at Re:Coded.",
-    "imageURL1": "https://i.imgur.com/7igwXbz.jpeg",
-    "imageURL2": "https://i.imgur.com/7igwXbz.jpeg"
+    "images": [
+      {
+        "src": "https://i.imgur.com/8FOQDEa.jpeg",
+        "alt": "Graduation certificate"
+      },
+      {
+        "src": "https://i.imgur.com/7igwXbz.jpeg",
+        "alt": "Dedicated hours"
+      }
+    ]
   },
   {
     "id": "software-department",
@@ -30,8 +46,16 @@
     "date": "11th November, 2020",
     "content": "I got into my dream department which is Software Engineering or CS related departments at college. I got into Koya University which is one of the most beautiful college in Kurdistan. I'm currently a junior(3rd grade) student.",
     "brief": "Got into Software Engineering department.",
-    "imageURL1": "https://i.imgur.com/mggDaiX.jpeg",
-    "imageURL2": "https://i.imgur.com/6GhJonS.jpeg"
+    "images": [
+      {
+        "src": "https://i.imgur.com/mggDaiX.jpeg",
+        "alt": "Engineering department"
+      },
+      {
+        "src": "https://i.imgur.com/6GhJonS.jpeg",
+        "alt": "College road"
+      }
+    ]
   },
   {
     "id": "my-journey",

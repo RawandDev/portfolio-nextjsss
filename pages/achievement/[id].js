@@ -36,24 +36,16 @@ function AchievementDetail({ about }) {
           </a>
         ))}
       </p>
-      {about?.imageURL1 && about?.imageURL2 && (
-        <div>
-          <Image
-            src={about?.imageURL1}
-            width={600}
-            height={400}
-            objectFit="contain"
-            alt={about?.title}
-          />
-          <Image
-            src={about?.imageURL2}
-            width={600}
-            height={400}
-            objectFit="contain"
-            alt={about?.title}
-          />
-        </div>
-      )}
+      {about?.images?.map((image, index) => (
+        <Image
+          src={image.src}
+          width={600}
+          height={400}
+          objectFit="contain"
+          alt={about.alt}
+          key={index}
+        />
+      ))}
     </div>
   );
 }
