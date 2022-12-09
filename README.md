@@ -14,4 +14,4 @@ yarn install
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result or open [https://www.rawadev.me](https://www.rawadev.me)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
