@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import Techs from "../components/Techs";
 import glass from "../public/images/glass.svg";
 import cig from "../public/images/cig.png";
+import hero from "../public/images/hero.jpeg";
 // import resume from "../public/images/RawandKamal.pdf";
 
 export default function Home() {
@@ -106,13 +107,14 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="https://i.imgur.com/tRjYq6t.jpeg"
+                src={hero}
                 alt="avatar"
                 className="rounded-full z-10 cursor-pointer mt-10"
                 width={400}
                 height={400}
                 objectFit="cover"
                 onClick={handleShowGlass}
+                priority
               />
             </div>
           </div>
